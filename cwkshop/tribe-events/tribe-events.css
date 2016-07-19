@@ -1,0 +1,27 @@
+/* css overrides for event calendar */
+#tribe-events-content .tribe-events-tooltip h4 { color: #E82A1D;}
+.tribe-events-calendar .tribe-events-tooltip h4 { color: #E82A1D;}
+
+.tribe-events-notices {
+	background-color: #D9F7D9;
+	border-color: #5E7D83;
+	color: #313131;
+}
+ul.tribe-events-sub-nav a, 
+.tribe-events-back a, 
+.tribe-events-list-widget .tribe-events-widget-link a,
+ .tribe-events-adv-list-widget .tribe-events-widget-link a
+{
+	font-weight: normal;
+}
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"],
+.tribe-events-calendar td.tribe-events-present div[id*="tribe-events-daynum-"]>a {
+	background-color: #E82A1D; /* cwkred */
+}
+
+table.tribe-events-calendar th{
+	
+		background: #f44438;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f44438), to(#b21b10));
+		background: -moz-linear-gradient(top, #f44438, #b21b10);
+	}

@@ -1,0 +1,23 @@
+CWK Template Mod Notes - WooShop :
+	1. added CSS skeleton classes for dsiplays > 1200
+		/sass/partials/_media1200
+	2. moved slider to nine columns, shifted by 3 columns (for now)
+		in /slider.php - nope
+	2A.  slider.php, used cwk-slider for image size & added image size in 
+		functions.php   
+	3. added single-recipe s.t. the featured image of the recipe doesnt show 
+		in the blog when displaying single recipe. (was gi-normous
+	4. added page-slider page template
+		page-slider.php
+	5. functions.php:
+		- added vars to control postimg size (although not really working)  check loop.php
+	6. archive:
+		- loop.php - add link to image of archive (category blog);
+		
+	7.  comment out javascript from Googleapis in: wooshop\framework\theme-scripts.php:
+	8. page.php & page-home.php
+		display the page title.
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	9. loop.php 
+		display category for blog archives.
+	

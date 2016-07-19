@@ -1,0 +1,109 @@
+
+/************recipe grid ************/
+@media only screen and (min-width: 768px) {
+	.page .entry-content .wpurp-recipe-grid-container .recipe.recipe-card {
+		//width: 18%;
+	}
+}
+@media only screen and (max-width:769px) { // smaller than tablet.
+	.flex-caption {
+		display: none;
+		visibility: hidden;
+	}
+}
+/************* product categories **********/
+@media only screen and (max-width:768px) and (min-width:768px) { // necessary due to the "cascading of style sheets"
+	#content #dessky-display-products ul.products li.product  { //
+		//float: left!important;
+		width: 45%!important;
+		margin: 0 3.8% 2.992em 0;
+	}
+
+}
+@media (min-width: 960px) { // at desktop sizes ....
+	.cwk-homebox-wrapper .menu-home_farmers-container, 
+	.cwk-homebox-wrapper .menu-home_shop-container, 
+	.cwk-homebox-wrapper .menu-home_table-container {
+		padding-left: 20px;
+	}
+	#homebottom ul.rpwe-ul {
+		width: 100%;
+		li.rpwe-li {
+			width: 23%;
+			margin-left: 1%;
+			margin-right: 1%;
+			img {
+				width: 100%;
+				height: inherit;
+			}
+		}
+	}
+}
+
+/* ******* slideshow *********/
+/* make buttons unslideshow not freak out */
+@media (max-width: 959px) {
+	.main > article.post {
+		width: 100%;
+		.postimg {
+			text-align:center;
+			img {
+				width: initial;
+			}
+		}
+	}
+	#slider .flexslider .flex-control-nav {
+		width: 100%;
+		li { 
+			width: 11px;
+			display: inline-block;
+			a {
+			}
+		}
+	}
+}
+// med tablet.
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	// trying to get search box & navbar to look normal at tablet size.
+	#navigation #topnav {
+		margin-left: 0px;
+		> li {
+			letter-spacing: 0px;
+		}
+	}
+	#searchform div.bgsearch {
+		width: 180px; 
+	}
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#slidercontainer {
+		padding-bottom: 0px!important;
+	}
+}
+@media only screen and (max-width: 767px) {
+	#user-nav {
+		margin-bottom: 15px!important;
+	}
+
+}
+
+
+/* ******* end slideshow *********/
+/********** print recipe stuff here *********/
+@media print {
+	body {
+		.wpurp-container {
+			border: 1px solid red!important;
+		}
+	}
+}
+/********** end print recipe *********/
+/********** product sytling **********/
+// related products on product page, dont float right on 2nth child
+#content .product-detail div.related.products ul.products li.product,
+	#content #dessky-display-products ul.products li.product {
+	float:left!important; // and i mean it.
+}
+/********** end product **************/

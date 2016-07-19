@@ -1,0 +1,82 @@
+/**************** recipe css  *************/
+.wpurp-container a {
+	color: $link-color!important;
+}
+.wpurp-container a:hover {
+	color: $link-hover-color!important;
+}
+
+/******** recipe grid ********/
+.wpurp-recipe-grid-container {
+	clear: both;
+	text-align: center;
+	.recipe.recipe-card {
+		border: none!important;
+		div[id^=wpurp-container-recipe] { // div with id that starts with...
+			border: none!important;
+			background: none!important;
+			background-color: none!important;
+			.wpurp-recipe-title {
+				text-align: center!important;
+				color: $link-color!important;
+				font-weight: normal!important;
+				font-size: 16px!important;
+			}
+		}
+		//width: 28%; // zig - comment out 11Feb15
+		a {
+			width: 100%;
+			img {
+				width: 90%;
+			}
+			/* old .recipe-title {
+				width: 100%;
+				font-weight: normal;
+				font-size: 19px;
+				line-height: 22px;
+				text-align: center;
+			} */
+		}
+	}
+}
+.page .entry-content .wpurp-recipe-grid-container {
+	.recipe.recipe-card {
+
+	}
+	// text-align: center;
+}
+
+/******** end recipe grid ****/
+//*********** single recipes ***************
+#singlepost, #singlerecipe {
+	div[id^=wpurp-container-recipe] {
+		background: none!important;
+		.wpurp-recipe-ingredient-container {
+			.wpurp-recipe-ingredient {
+				.wpurp-box {
+					//min-width: 0px!important;
+					//vertical-align: bottom!important;
+					.wpurp-recipe-ingredient-unit {
+						
+					}
+					.wpurp-recipe-ingredient-name {
+						//float: left!important;
+					}
+				}
+			}
+		}
+		.wpurp-recipe-sharing .pinterest-pinit a {
+			background-image: url(https://cherylwixsonskitchen.com/wp-content/themes/cwkshop/images/pinit_bg_en_rect_gray_28_1.png)!important;
+		}
+		.cwk-recipe-noimage {
+			background-size: cover!important;
+		}
+	}
+}
+.wpurp-container .wpurp-recipe-sharing .pinterest-pinit a {
+
+}
+//*********** end single recipes ***************
+
+
+/**************** end recipe css  *************/

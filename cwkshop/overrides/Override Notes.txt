@@ -1,0 +1,53 @@
+OverRide Notes
+--------------
+WooShop Template
+	assets/images/social/ 
+	icons for facebook, google+, twitter & pinterest.
+	
+Ultimate Recipe Prem
+	Grid:  limit # of recipes shown
+	 - template:  
+	 no longer needed, recipe-grid shortcode now allows limit number.
+
+	 change recipe-without-photo image 
+	 http://cherylwixsonskitchen.com/cwkshop/wp-content/plugins/wp-ultimate-recipe-premium/addons/recipe-grid/img/recipe_without_photo.png
+
+	Category Blog/Archive
+	 - display similar to recipe grid, only picture & title in a grid style
+	Display recipe image if post-type = recipe OR custom field show_custom_recipe exists on regular post  
+	
+	- Usually dont show recipe image if recipe embedded in regular post UNLESS custom_field called show_recipe_image, means to show the image 
+
+		if(!is_null($thumb_url) && ((get_post_type() == "recipe") || get_post_meta( get_the_ID(), "show_recipe_image", true )))  in /wp-ultimate-recipe-premium/addons/custom-templates/layouts/default.php
+
+Ultimate Recipe (free)
+	- print.css
+
+	/************** print css for recipes *************/
+	.wpurp-container .recipe-tag-name {
+		width: 8.6em;
+	}
+	.wpurp-container .recipe-header-extra {
+		float: right;   
+		padding-right: 1em;   
+	}
+	.wpurp-container .recipe-ingredient-quantity-unit {
+		  width: auto;
+	}
+	wpurp-container .recipe-ingredient-unit {
+		color: #000; 
+		font-size: 1em; 
+	}
+	.wpurp-container .recipe-ingredient-unit .recipe-ingredient-quantity {
+		float: left;
+	}
+
+	.wpurp-container .recipe-ingredient-notes {
+		 color: #000; 
+		font-size: 1.0em;
+	}
+WooCommerece
+	[] relabel Product Description to Product Story.  (in functions.php)
+	
+	
+	

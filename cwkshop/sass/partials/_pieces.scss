@@ -1,0 +1,163 @@
+/*** standard stuff styling like links, h's p's ... */
+ h1, h2, h3, h4, h5, h6 {
+ 	//font-family: Arial, Tahoma, sans-serif; // skip the open_sansregular;
+ 	font-family: Futura, "Century Gothic" Arial, sans-serif;
+ }
+ 
+ body {
+ 	// font-family: open_sansregular, Arial, Tahoma, sans-serif;
+ 	font-family: Futura,  "Century Gothic", Arial, sans-serif;
+ }
+
+
+html, body, div, span, 
+ p, blockquote, dl, dt, dd, ol, ul, li, form, label, 
+ table, caption, tbody, tfoot, thead, tr, th, td, article, aside, 
+ menu, nav, output, ruby, section, summary,  {	
+ 	font-size: $font-size;
+ 	line-height: $font-lineheight;
+	font-family: Futura, "Century Gothic", Arial, sans-serif;
+}
+/* links */
+a:hover, .colortext:hover, .colortext:hover,
+.entry-utility a:hover {
+	color: $link-hover-color!important;
+}
+.posttitle a {
+	color: $link-color!important;
+}
+.sf-menu li a { // for some reason (unvisited), not always working....()
+	color: $menulink-color;
+	text-shadow: none;
+	font-family: Futura, "Century Gothic", Arial, sans-serif;
+ 	font-weight: bold;
+ 	padding-top: 12px;
+	padding-bottom: 12px;
+	letter-spacing: 1px; 
+}
+.sf-menu li ul.sub-menu li a { // only on top level menu.
+	letter-spacing: 0px;
+}
+/* images */
+.postimg { // these are featured images
+	width: initial;
+	img {
+		//width:  initial!important; // better than 100%;
+		width: 100%;
+		background: none!important;
+		padding: 0px;
+	}
+}
+.wp-caption.aligncenter {
+	width: initial!important;
+	text-align: center;
+	.wp-caption-text {
+		text-align: center;
+	}
+}
+
+div.wp-caption-text {
+	margin-bottom:0;
+	//padding: 8px 0 0 0;
+	position: relative;
+	font-style: italic;
+	text-align: center;
+}
+
+#sidebar .widget-area {
+	.widget-title {
+
+	}
+	.widget-container {
+		margin-bottom: 30px;
+	}
+	img {
+		border: 0px;
+	}
+
+}
+em {
+	font-style: italic;
+}
+h1 {
+	line-height: 24px; 
+}
+h2 {
+	line-height: 20px;
+}
+h1.pagetitle, h1.entry-title, h1.cattitle, h1.tax-title, h1.cwk-title {
+	//text-align: center;
+	border-bottom: 1px solid $cwk-red;
+	padding-bottom: 28px;
+	margin-bottom: 28px;
+}
+h1, h1.pagetitle, h1.entry-title, h1.cattitle, h1.tax-title, h1.pagetitle span, h1.cwk-title {
+	font-size: 28px;
+	line-height: 31px; 
+	//line-height: 200%;
+	font-weight: 600;
+	padding-top: 30px;
+}
+.cwk-cattitle-block {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	//background-color: $cat-title-bkgd;
+	height: 40px;
+	padding-bottom: 28px;
+	margin-bottom: 28px;
+	border-bottom: 1px solid $cwk-red;
+	.cwk-cat-title {
+		float: left;
+		padding: 10px;
+		height: 50px;
+	}
+	.cwk-cat-icon {
+		height: 50px;
+		float: left;
+	}
+}
+h2.widget-title, h2.widget-title span {
+	color: $font-color;
+	line-height: 20px;
+}
+#outermain {
+	padding-bottom: 0px;
+}
+.post {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.entry-utility {
+	margin-bottom: 5px;
+}
+
+
+#nav-container {
+	height: 48px;
+
+	#navigation {
+		border: 0px;
+		#nav-wrap { 
+			//width: inherit;
+		}
+	}
+}
+#maincontent #sidebar {
+	margin-bottom:0px;
+}
+#outerfootersidebar { 
+	padding-top: 0px;
+	#footersidebarcontainer {
+		margin-bottom: 0px;
+		height: 0px;
+		#footcol1, #footcol2, #footcol3, #footcol4 {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.wp-pagenavi {
+	height: 30px;
+}
+
+/******* end pieces ***********/

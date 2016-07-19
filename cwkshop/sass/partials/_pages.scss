@@ -1,0 +1,97 @@
+/**************** pages *************/
+
+/*** for the Shop landing page ****/
+.cwk-product-cat-title {
+	position: relative;
+	bottom: -35px;
+	font-size: 28px;
+	color: $cwk-red;
+	line-height: 30px;
+}
+.cwk-product-cat-logo {
+	padding-top: 26px;
+}
+
+/* blog archive pages */
+.main > article.post {
+	float: left;
+	//width: $blog-archive-width; // media affected.
+	width: 31%;
+	padding: 7px;
+	max-height: 500px;
+	//height: 560px;
+	overflow: hidden;
+	border-bottom: 0px; 
+	clear: none;
+	.posttitle {
+		clear: both;
+	}
+	.postimg { // these are featured images
+		width: 100%;
+		img {
+			width:  100%;
+		}
+	}
+}
+
+/*  for the recipe archive pages */
+.main-recipe {
+	article { 
+		float: left;
+		// margin-bottom: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 10px;
+		border: 0px;
+		.CWK-recipe-summary {
+			position: relative;
+			display: inline-block;
+			//width: 170px;
+			width: 277px;
+
+			min-height: 170px;
+			overflow: hidden;
+			vertical-align: top !important;
+			//border: 1px solid #000;
+			margin: 7px;
+			border-color: #D9D9D9;
+			.recipepostimg img, .recipepostimg .recipe-img-placeholder {
+				margin: 10px 10px 0 10px !important;
+				border: 0px;
+			}
+			.recipe-title {
+				//width: 150px;
+				margin: 0 10px 7px 10px;
+				vertical-align: top !important;
+				font-weight: normal;
+				text-align: center;
+				height: 38px;
+				min-height: 38px;
+				over-flow: hidden;
+				a { font-weight: normal;}
+			}
+		}
+	}
+}
+/************ product pages *************/
+#outerbeforecontent {
+	margin-bottom: 0px!important;
+	#beforecontent{
+		border-bottom: 0px!important;
+		margin-bottom: 0px;
+	}
+}
+.cwk-product-cat-img {
+	img {
+		border: 0px;
+	}
+}
+/*** search result page ***/
+#searchresult {
+	padding-top: 20px;
+	article {
+		a .postimg img {
+			margin-right: 20px;
+			width: 100px;
+		}
+	}
+}

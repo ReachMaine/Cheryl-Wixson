@@ -1,0 +1,16 @@
+I realize my support has expired.  But my client has been using wooshop  for a while now and up til how has used it primarily as a catalog site.  Now she wants to be able to sell her products.  
+
+However, there seems to be a problem with the js script for the plus and minus buttons in global/quantity-input.php.  It works fine if there is only one product in the shopping cart, but if there is more than one product in the shopping cart a click on any + or - sign will update the quantity of the  first item by the number of items in the shopping cart.
+
+Probably because the js is included for each item in the shopping cart in the quantity-input.php, but each item has the same id:  qty-val.  Thus there are n number scripts that run and update the first #qty-val ti finds.  
+
+Any help here would be much appreciated.  
+
+Wooshop theme version : 2.3.1
+Wordpress version:   4.3.1
+url of site:  https://cherylwixsonskitchen.com/
+
+
+Linda Speight
+Reach Maine / Ellsworth American.com
+

@@ -1,0 +1,81 @@
+/* Colors ---------------------------------------------- */
+// Font Colors
+$titleFontColor: #a62425;
+//$menuBarFontColor:#FFFFFF;
+//$dkBrownFontColor:#552c14;
+//$brickFontColor: #a63824; //#A63624; // #a63824;
+$footer-font: #DBDBDB;//#C8C8C8;
+//$ltrBrickFontColor: #d37a57;
+$cwk-red: #E82A1D;
+$link-color: #E82A1D; /* also set in wp backend: recipe->admin->themes-> link color  */
+$link-hover-color: #ff7575; /* ditto */
+$menulink-color: #666;
+$font-color: #333;
+$image-bordercolor: #CDCDCD;
+
+// Background colors: 
+$sitebackground: #FFF;
+$recipe-background: #FFF;
+$content-background: #FFF;
+$footersidebar-background: #FFF;
+$footer-background: #4B4B4B;
+$cwk-navbar-bkgnd: #000;
+
+$cat-title-bkgd : #EFEFEF;
+$cat-title-border : #C4C4C4;
+// woocommerce colors
+$wooc-ok-msg: #138124;	// default color: #8FAE1B = lime green
+$wooc-info-msg:#1E85BE;	// default color: #1E85BE - light blueish
+$wooc-error-msg:#B81C23;  // default color:#B81C23 - orange red  
+// colors for calendar.
+$calendar-today-color: #E82A1D;
+/* image sizes */
+$archive-image-width: 250px;
+$singlepost-image-width: 250px;
+
+/* Typography ------------------------------------------ */
+
+$font-size: 16px;
+$font-lineheight: 24px;
+$stacked-menu-fontsize: 19px;
+$stacked-menu-lineheight: 22px;
+$blog-archive-width: 254px;
+
+.color-red {
+	background-color: $cwk-red;
+}
+
+#navigation { // navigation bar.
+	width: 100%;
+	background-image: none;
+	background-color: $cwk-navbar-bkgnd;
+	-webkit-border-radius: 0px; 
+	-moz-border-radius: 0px;
+	border: 0px!important;
+	#topnav {
+		margin-left: 30px;
+		li:before {
+			//border-right: 0px;
+		}
+		li {
+			border-right: 0px;
+			a {
+				
+			}
+		}
+	}
+	#topnav > li > a { // only top level
+			color: white;
+			text-shadow: none;
+	}
+	#searchform {
+		right-margin: 30px;
+	}
+}
+
+.clear {
+	height: 0px;
+}
+
+
+
