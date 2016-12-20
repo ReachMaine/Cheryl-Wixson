@@ -53,7 +53,7 @@
 	 return $tabs;
 	} 
 	/* rename the product description heading */
-	add_filter('woocommerce_product_description_heading', 'cwk_rename_descrtab', 98);
+	add_filter('woocommerce_product_description_heading', 'cwk_rename_descrtab', 98, 1);
 	function cwk_rename_descrtab($desc_string) {
 
 	 $desc_string = 'The Product Story';
