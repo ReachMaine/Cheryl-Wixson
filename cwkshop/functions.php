@@ -1,4 +1,7 @@
 <?php
+	//if(file_exists(get_stylesheet_directory().'/custom/ultimate-recipe.php'))
+		require_once(get_stylesheet_directory().'/custom/ultimate-recipe.php');
+
 	$cwk_thumbimg = array(200, 999); // size of featured image in archive/category blog
 	$cwk_postimg = array(200, 999); // size of featured image on single post.
 	add_image_size('recipe-medium', 400, 400, false );
@@ -8,13 +11,13 @@
 	function woo_remove_product_tabs( $tabs ) {
 	    unset( $tabs['reviews'] ); 			// Remove the reviews tab
 	    return $tabs;
-	 
+
 	}
 
 	/** add in the new tabs, nutrition & recipes **/
 	add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab' );
 	function woo_new_product_tab( $tabs ) {
-		
+
 		// Adds the recipe tab
 	 	$tabs['recipe_tab'] = array(
 			'title' 	=> __( 'Recipes', 'woocommerce' ),
@@ -28,20 +31,20 @@
 			'callback' 	=> 'woo_nutrition_tab_content'
 		); */
 		return $tabs;
-	 
+
 	}
 	function woo_nutrition_tab_content() {
-	 
+
 		// The new nutrition content
 		get_template_part('cwk-partials/nutrition');
-		
+
 	}
 
 	function woo_recipes_tab_content() {
-	 
-		// The related recipes 
+
+		// The related recipes
 		get_template_part('cwk-partials/recipe');
-		
+
 	}
 
 	/* rename the product tab */
@@ -51,7 +54,7 @@
 	 $tabs['description']['title'] = 'The Story';
 
 	 return $tabs;
-	} 
+	}
 	/* rename the product description heading */
 	add_filter('woocommerce_product_description_heading', 'cwk_rename_descrtab', 98, 1);
 	function cwk_rename_descrtab($desc_string) {
@@ -62,13 +65,13 @@
 	}
 
 	/* move price in single product display to under excerpt, change the priority */
-	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 ); 
+	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
 
 	/* remove the 'log in/log out' from the main menu */
     add_action( 'after_setup_theme', 'cwk_setup' ); /* child function.php runs before main theme and wooshop not pluginable */
 	function cwk_setup () {
-		remove_filter('wp_nav_menu_items', 'add_loginout_link', 10, 2 ) ;	
+		remove_filter('wp_nav_menu_items', 'add_loginout_link', 10, 2 ) ;
 
 	}
 
@@ -88,8 +91,8 @@
 				'after_widget'  => '</aside>',
 				'before_title'  => '<h3 class="home widget-title">',
 				'after_title'   => '</h3>',
-			)); 
-		} //function_exists('register_sidebar')	
+			));
+		} //function_exists('register_sidebar')
 
 			/*****  change the login screen logo ****/
 	function my_login_logo() { ?>
@@ -113,12 +116,12 @@
 	/* add favicons for admin */
 	add_action('login_head', 'add_favicon');
 	add_action('admin_head', 'add_favicon');
-	
+
 	function add_favicon() {
 		$favicon_url = get_stylesheet_directory_uri() . '/images/admin-favicon.ico';
 		echo '<link rel="shortcut icon" href="' . $favicon_url . '" />';
-	} 
-	/***** end admin favicon *****/	
+	}
+	/***** end admin favicon *****/
 
 
 

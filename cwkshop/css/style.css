@@ -471,6 +471,9 @@ h2.widget-title, h2.widget-title span {
   #singlepost div[id^=wpurp-container-recipe] .cwk-recipe-noimage, #singlerecipe div[id^=wpurp-container-recipe] .cwk-recipe-noimage {
     background-size: cover !important; }
 
+.cwk-recipe-list .cwk-recipe a {
+  line-height: 2em; }
+
 /**************** end recipe css  *************/
 /* Theme customization starts here */
 #headerright {

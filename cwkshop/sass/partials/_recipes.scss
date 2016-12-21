@@ -57,7 +57,7 @@
 					//min-width: 0px!important;
 					//vertical-align: bottom!important;
 					.wpurp-recipe-ingredient-unit {
-						
+
 					}
 					.wpurp-recipe-ingredient-name {
 						//float: left!important;
@@ -77,6 +77,12 @@
 
 }
 //*********** end single recipes ***************
-
+.cwk-recipe-list {  // short linda added to just give list.....
+	.cwk-recipe {
+		a {
+			line-height: 2em;
+		}
+	}
+}
 
 /**************** end recipe css  *************/
