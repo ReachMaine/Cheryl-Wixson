@@ -1,5 +1,4 @@
-@import url("../wooshop/style.css");
-/*  
+/*
 	Theme Name: cwkshop
 	Theme URI: http://www.dessky.com/
 	Description: WooShop for Cheryl Wixson's Kitchen
@@ -10,18 +9,19 @@
 	License URI: license.txt
 	Template: wooshop
 */
+@import url("../wooshop/style.css");
 /* Colors ---------------------------------------------- */
 /* also set in wp backend: recipe->admin->themes-> link color  */
 /* ditto */
 /* image sizes */
 /* Typography ------------------------------------------ */
 .color-red {
-  background-color: #e82a1d; }
+  background-color: #E82A1D; }
 
 #navigation {
   width: 100%;
   background-image: none;
-  background-color: black;
+  background-color: #000;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border: 0px !important; }
@@ -71,7 +71,7 @@
   position: relative;
   bottom: -35px;
   font-size: 28px;
-  color: #e82a1d;
+  color: #E82A1D;
   line-height: 30px; }
 
 .cwk-product-cat-logo {
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Futura, "Century Gothic" Arial, sans-serif; }
 
 body {
-  font-family: Futura, "Century Gothic", Arial, sans-serif; }
+  font-family: Futura,  "Century Gothic", Arial, sans-serif; }
 
 html, body, div, span,
 p, blockquote, dl, dt, dd, ol, ul, li, form, label,
@@ -160,10 +160,10 @@ a:hover, .colortext:hover, .colortext:hover,
   color: #ff7575 !important; }
 
 .posttitle a {
-  color: #e82a1d !important; }
+  color: #E82A1D !important; }
 
 .sf-menu li a {
-  color: #666666;
+  color: #666;
   text-shadow: none;
   font-family: Futura, "Century Gothic", Arial, sans-serif;
   font-weight: bold;
@@ -209,7 +209,7 @@ h2 {
   line-height: 20px; }
 
 h1.pagetitle, h1.entry-title, h1.cattitle, h1.tax-title, h1.cwk-title {
-  border-bottom: 1px solid #e82a1d;
+  border-bottom: 1px solid #E82A1D;
   padding-bottom: 28px;
   margin-bottom: 28px; }
 
@@ -225,7 +225,7 @@ h1, h1.pagetitle, h1.entry-title, h1.cattitle, h1.tax-title, h1.pagetitle span, 
   height: 40px;
   padding-bottom: 28px;
   margin-bottom: 28px;
-  border-bottom: 1px solid #e82a1d; }
+  border-bottom: 1px solid #E82A1D; }
   .cwk-cattitle-block .cwk-cat-title {
     float: left;
     padding: 10px;
@@ -235,7 +235,7 @@ h1, h1.pagetitle, h1.entry-title, h1.cattitle, h1.tax-title, h1.pagetitle span, 
     float: left; }
 
 h2.widget-title, h2.widget-title span {
-  color: #333333;
+  color: #333;
   line-height: 20px; }
 
 #outermain {
@@ -431,7 +431,7 @@ h2.widget-title, h2.widget-title span {
     padding-left: 1300px; } }
 /**************** recipe css  *************/
 .wpurp-container a {
-  color: #e82a1d !important; }
+  color: #E82A1D !important; }
 
 .wpurp-container a:hover {
   color: #ff7575 !important; }
@@ -448,7 +448,7 @@ h2.widget-title, h2.widget-title span {
       background-color: none !important; }
       .wpurp-recipe-grid-container .recipe.recipe-card div[id^=wpurp-container-recipe] .wpurp-recipe-title {
         text-align: center !important;
-        color: #e82a1d !important;
+        color: #E82A1D !important;
         font-weight: normal !important;
         font-size: 16px !important; }
     .wpurp-recipe-grid-container .recipe.recipe-card a {
@@ -544,11 +544,10 @@ h2.widget-title, h2.widget-title span {
     float: left;
     margin-top: -20px;
     margin-left: -20px;
-    background-color: white; }
+    background-color: #FFF; }
   .cwk-homebox-wrapper .cwk-homebox-title {
     text-align: center;
     letter-spacing: 1px;
-    text-decoration: underline;
     text-transform: uppercase; }
   .cwk-homebox-wrapper .menu-home_farmers-container, .cwk-homebox-wrapper .menu-home_shop-container, .cwk-homebox-wrapper .menu-home_table-container {
     padding-left: 10px; }
@@ -569,7 +568,7 @@ h2.widget-title, h2.widget-title span {
       list-style-position: inside; }
 
 .home.widget-title a {
-  color: #333333 !important;
+  color: #333 !important;
   font-size: 24px;
   line-height: 28px;
   padding-right: 7px; }
@@ -593,7 +592,7 @@ h2.widget-title, h2.widget-title span {
   padding-bottom: 5px;
   margin-bottom: 20px; }
   #content article .postimg img, #searchresult article .postimg img {
-    border-color: #cdcdcd; }
+    border-color: #CDCDCD; }
   #content article .entry-content p, #searchresult article .entry-content p {
     margin-bottom: 28px; }
 
@@ -610,14 +609,14 @@ h2.widget-title, h2.widget-title span {
   	}
   	.one_third.last_column {
   		.margin-right:0px;
-  	} 
+  	}
   }*/ }
   #singlepost article .postimg, #singlerecipe article .postimg {
     float: right;
     padding-left: 10px;
     width: 250px; }
     #singlepost article .postimg img, #singlerecipe article .postimg img {
-      border-color: #cdcdcd; }
+      border-color: #CDCDCD; }
   #singlepost article .postimg.cwk_bigger, #singlerecipe article .postimg.cwk_bigger {
     width: 50%; }
     #singlepost article .postimg.cwk_bigger img, #singlerecipe article .postimg.cwk_bigger img {
@@ -645,12 +644,12 @@ ul.ecs-event-list li {
 #singlepost .wpurp-container .tabcontainer ul.tabs, #singlerecipe .wpurp-container .tabcontainer ul.tabs {
   margin-left: 0px !important; }
   #singlepost .wpurp-container .tabcontainer ul.tabs li, #singlerecipe .wpurp-container .tabcontainer ul.tabs li {
-    border: 1px solid #dfdbdf !important;
+    border: 1px solid #DFDBDF !important;
     padding: 0 13px !important; }
     #singlepost .wpurp-container .tabcontainer ul.tabs li a, #singlerecipe .wpurp-container .tabcontainer ul.tabs li a {
       padding: 10px !important; }
 #singlepost .wpurp-container .tabcontainer .tab-content, #singlerecipe .wpurp-container .tabcontainer .tab-content {
-  background-color: white !important; }
+  background-color: #FFF !important; }
 
 #singlepost .wpurp-container .recipe-header .recipe-header-image,
 #singlerecipe .wpurp-container .recipe-header .recipe-header-image {
@@ -672,7 +671,7 @@ ul.ecs-event-list li {
   font-size: 24px;
   text-align: center;
   line-height: 40px;
-  color: #e82a1d;
+  color: #E82A1D;
   font-weight: normal; }
 #singlepost .wpurp-container .recipe-header .recipe-header-information .recipe-information-category,
 #singlerecipe .wpurp-container .recipe-header .recipe-header-information .recipe-information-category {
@@ -766,13 +765,13 @@ table.tribe-events-calendar thead tr th {
 h2.widget-title span {
   font-size: 20px;
   line-height: 36px;
-  border-bottom: 1px solid #e82a1d; }
+  border-bottom: 1px solid #E82A1D; }
 
 /**** end side bar ******************/
 /****footer sidebar ********/
 #outerfootersidebar {
   background: none !important;
-  background-color: white !important;
+  background-color: #FFF !important;
   border: 0px !important; }
 
 #outerfooter {
@@ -790,12 +789,12 @@ ul.cwk-menu-list {
       line-height: 22px; }
 
 #outerfooter {
-  background-color: #4b4b4b !important; }
+  background-color: #4B4B4B !important; }
   #outerfooter #footercontainer {
     padding-bottom: 0px;
     padding-top: 10px; }
     #outerfooter #footercontainer #footer h3 {
-      color: #dbdbdb;
+      color: #DBDBDB;
       font-size: 28px;
       line-height: 30px;
       font-weight: normal;

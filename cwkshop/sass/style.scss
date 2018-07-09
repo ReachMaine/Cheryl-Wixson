@@ -1,4 +1,4 @@
-/*  
+/*
 	Theme Name: cwkshop
 	Theme URI: http://www.dessky.com/
 	Description: WooShop for Cheryl Wixson's Kitchen
@@ -12,7 +12,7 @@
 
 @import url("../wooshop/style.css");
 @import "partials/settings";
-@import "partials/functions"; 
+@import "partials/functions";
 @import "partials/pages";
 @import "partials/pieces";
 @import "partials/media1200";
@@ -24,9 +24,9 @@
 .summary .main article:nth-child(3n-1) {
 	clear:both;
 }
-.summary 
+.summary
 /*********** header slice ********/
-// logo, header-right (which is shopping cart) & Naviation 
+// logo, header-right (which is shopping cart) & Naviation
 #outerheader {
 	margin-bottom: 0px;
 }
@@ -87,7 +87,7 @@
 			color: #434343;
 			text-align: right;
 		}
-	}	
+	}
 }
 /**** home page boxes ***/
 .cwk-homebox-wrapper {
@@ -104,7 +104,7 @@
 	.cwk-homebox-title {
 		text-align: center;
 		letter-spacing: 1px;
-		text-decoration: underline;
+		//text-decoration: underline;
 		text-transform: uppercase;
 		//border-bottom: 1px solid red;
 	}
@@ -143,7 +143,7 @@
 }
 // now trying to center the list on the page
 #homebottom {
-	 width: 100%; 
+	 width: 100%;
 	 overflow: hidden;
 	ul.rpwe-ul {
 		position: relative;
@@ -151,8 +151,8 @@
 		display: block;
 		left: 50%;
 		li.rpwe-li {
-			position: relative; 
-			float: left; 
+			position: relative;
+			float: left;
 			display: block; right: 50%;
 		}
 	}
@@ -199,7 +199,7 @@
 			width: 50%;
 			img {
 				width: 100%!important;
-			}						
+			}
 		}
 		/*.entry-content {
 			.one_third { // columns plugin (NOT skeleton)
@@ -209,7 +209,7 @@
 			}
 			.one_third.last_column {
 				.margin-right:0px;
-			} 
+			}
 		}*/
 	}
 }
@@ -264,7 +264,7 @@ ul.ecs-event-list  { // ex.: dinner is served page
 }
 #singlepost .wpurp-container .recipe-header .recipe-header-image img,
 #singlerecipe .wpurp-container .recipe-header .recipe-header-image img
- { // thumbnail picture 
+ { // thumbnail picture
  	width: 90%;
 	border: 0px!important;
 	padding: 0px!important;
@@ -273,7 +273,7 @@ ul.ecs-event-list  { // ex.: dinner is served page
 	-webkit-box-shadow: none!important;
 	-moz-box-shadow:none!important;
 }
-#singlepost .wpurp-container .recipe-header, 
+#singlepost .wpurp-container .recipe-header,
 #singlerecipe .wpurp-container .recipe-header {
 	.recipe-header-information {
 		.recipe-information-name span {
@@ -290,13 +290,13 @@ ul.ecs-event-list  { // ex.: dinner is served page
 		}
 		.recipe-tag-name {
 			width: 138px;
-		}	
+		}
 	}
 
 }
 
 .wpurp-container .recipe-ingredients {
-	.recipe-ingredient-quantity-unit { // remove column look of ingred. 
+	.recipe-ingredient-quantity-unit { // remove column look of ingred.
 		width: auto;
 		font-size: 16px!important;
 	}
@@ -306,7 +306,7 @@ ul.ecs-event-list  { // ex.: dinner is served page
 	.recipe-ingredient-unit {
 		font-size: 16px!important;
 	}
-}	
+}
 
 .wpurp-container .recipe-header .recipe-header-information .recipe-header-extra { // hide the servings
 	visibility: hidden;
@@ -377,7 +377,7 @@ ul.ecs-event-list  { // ex.: dinner is served page
 .woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-info:before {
 	//background-color: $wooc-info-msg!important;
 }
-.woocommerce .woocommerce-error, .woocommerce-page .woocommerce-error {	
+.woocommerce .woocommerce-error, .woocommerce-page .woocommerce-error {
 	//border-top-color: $wooc-error-msg!important;
 }
 .woocommerce .woocommerce-error:before, .woocommerce-page .woocommerce-error:before {
@@ -388,7 +388,7 @@ ul.ecs-event-list  { // ex.: dinner is served page
 .tribe-events-calendar {
 /* use tribe-events/tribe-events.css  */
 }
-.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a, 
+.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a,
 .tribe-events-calendar td.tribe-events-past .tribe-events-viewmore a {
 	opacity: 1!important;
 }
@@ -468,9 +468,9 @@ ul.cwk-menu-list.home li {
 		width: 40px;
 
 	}
-	//background-image: url("./images/footer-plaid")!important; 
+	//background-image: url("./images/footer-plaid")!important;
 	//background-repeat: repeat-y;
-	
+
 }
 .mofga-table {
 	border: 1px solid #808080;
