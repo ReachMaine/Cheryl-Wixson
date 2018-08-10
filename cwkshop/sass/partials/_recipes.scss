@@ -84,5 +84,10 @@
 		}
 	}
 }
-
+//********** recipe category / taxonomy  **********
+#content-recipe {
+	.main-recipe {
+		clear: both;  // needed when there is a category description
+	}
+}
 /**************** end recipe css  *************/

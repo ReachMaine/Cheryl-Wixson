@@ -16,8 +16,8 @@ get_header(); ?>
 
 
 		<?php $sidebarposition = of_get_option('dessky_sidebar_position' ,'right'); ?>
-        
-        <!-- MAIN CONTENT tax Archive--> 
+
+        <!-- MAIN CONTENT tax Archive-->
         <div id="outermain">
         	<div class="container">
                 <section id="maincontent" class="twelve columns">
@@ -25,31 +25,32 @@ get_header(); ?>
                         <h1 class="tax-title">
                                 <?php $term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) ); echo $term->name; ?>
                         </h1>
+												<?php the_archive_description( '<div class="taxonomy-description">', '</div>' ); ?>
                         <div class="main-recipe padcontent">
-                            
+
 							<?php
                                 /* Since we called the_post() above, we need to
                                  * rewind the loop back to the beginning that way
                                  * we can run the loop properly, in full.
                                  */
                                 rewind_posts();
-                                
+
                                 /* Run the loop for the archives page to output the posts.
                                  * If you want to overload this in a child theme then include a file
                                  * called loop-archives.php and that will be used instead.
                                  */
                                 get_template_part( 'loop-recipe', 'archive' );
                             ?>
-                    	<div class="clear"></div><!-- clear float --> 
+                    	<div class="clear"></div><!-- clear float -->
                         </div><!-- main -->
                     </section><!-- content -->
                     <aside id="sidebar" class="three columns <?php if($sidebarposition=="left"){echo "positionleft alpha";}else{echo "positionright omega";}?>">
-                        <?php get_sidebar();?>  
+                        <?php get_sidebar();?>
                     </aside><!-- sidebar -->
-                    
+
                 </section><!-- maincontent -->
             </div>
         </div>
         <!-- END MAIN CONTENT -->
-    
+
 <?php get_footer(); ?>
