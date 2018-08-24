@@ -38,6 +38,12 @@
 .clear {
   height: 0px; }
 
+.cwk-alt-button {
+  background-color: #b9b9b9;
+  color: white;
+  border-radius: 4px;
+  padding: 10px 15px; }
+
 /* Custom Functions ------------------------------------ */
 /* ===================================================== */
 /* ===================================================== */

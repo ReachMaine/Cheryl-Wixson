@@ -13,7 +13,7 @@ $menulink-color: #666;
 $font-color: #333;
 $image-bordercolor: #CDCDCD;
 
-// Background colors: 
+// Background colors:
 $sitebackground: #FFF;
 $recipe-background: #FFF;
 $content-background: #FFF;
@@ -26,7 +26,7 @@ $cat-title-border : #C4C4C4;
 // woocommerce colors
 $wooc-ok-msg: #138124;	// default color: #8FAE1B = lime green
 $wooc-info-msg:#1E85BE;	// default color: #1E85BE - light blueish
-$wooc-error-msg:#B81C23;  // default color:#B81C23 - orange red  
+$wooc-error-msg:#B81C23;  // default color:#B81C23 - orange red
 // colors for calendar.
 $calendar-today-color: #E82A1D;
 /* image sizes */
@@ -49,7 +49,7 @@ $blog-archive-width: 254px;
 	width: 100%;
 	background-image: none;
 	background-color: $cwk-navbar-bkgnd;
-	-webkit-border-radius: 0px; 
+	-webkit-border-radius: 0px;
 	-moz-border-radius: 0px;
 	border: 0px!important;
 	#topnav {
@@ -60,7 +60,7 @@ $blog-archive-width: 254px;
 		li {
 			border-right: 0px;
 			a {
-				
+
 			}
 		}
 	}
@@ -77,5 +77,9 @@ $blog-archive-width: 254px;
 	height: 0px;
 }
 
-
-
+.cwk-alt-button {
+	background-color: #b9b9b9;
+	color: white;
+	border-radius: 4px;
+	padding: 10px 15px;
+}
