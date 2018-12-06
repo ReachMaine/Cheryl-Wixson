@@ -51,7 +51,19 @@
 
 	 return $desc_string;
 	}
+/* end of tabs */
 
 	/* move price in single product display to under excerpt, change the priority */
 	remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 10 );
 	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price', 25 );
+
+
+// remove the sku from product page
+add_filter( 'wc_product_sku_enabled', 'bbloomer_remove_product_page_sku' );
+
+function bbloomer_remove_product_page_sku( $enabled ) {
+    if ( !is_admin() && is_product() ) {
+        return false;
+    }
+   return $enabled;
+}
