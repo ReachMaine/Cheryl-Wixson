@@ -18,7 +18,7 @@
  * @since WooShop 1.0
  */
 ?>
-	
+
 <?php /* If there are no posts to display, such as an empty archive page */ ?>
 <?php if ( ! have_posts() ) : ?>
 	<article id="post-0" class="post error404 not-found">
@@ -41,7 +41,7 @@
 	            <div class="recipepostimg">
 					<?php $custom = get_post_custom($post->ID);
 					$cf_thumb = (isset($custom["thumb"][0]))? $custom["thumb"][0] : "";
-					
+
 					if($cf_thumb!=""){
 						$thumb = '<img src="'. $cf_thumb .'" alt=""  class="scale-with-grid"/>';
 					}elseif(has_post_thumbnail($post->ID) ){
@@ -57,11 +57,13 @@
 	            <div class=recipe-title>
             		<?php //the_title(); ?>
             		<?php echo get_the_title(); ?>
-            	<div>
+								<?php if (has_secondary_title()) { echo '<span style="font-size: smaller"> - '.get_secondary_title().'</span>' ; } ?>
+						 	<div>
+
             </a>
-    	</div>       
+    	</div>
 	</article><!-- end post -->
-	
+
 	<?php comments_template( '', true ); ?>
 
 <?php endwhile; // End the loop. Whew. ?>
