@@ -64,6 +64,7 @@
 	}
 	/***** end admin favicon *****/
 
-
+/*  allow shortcodes in category descriptions */
+add_filter( 'term_description', 'do_shortcode' );
 
 ?>

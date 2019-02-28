@@ -44,6 +44,15 @@
   border-radius: 4px;
   padding: 10px 15px; }
 
+.cwk-grey-bkg {
+  background-color: #b9b9b9;
+  width: 100%;
+  border: 2px solid grey; }
+
+@media only screen and (min-width: 1200px) {
+  .cwk-grey-bkg {
+    padding-top: 20px;
+    padding-bottom: 20px; } }
 /* Custom Functions ------------------------------------ */
 /* ===================================================== */
 /* ===================================================== */
