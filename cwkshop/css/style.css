@@ -554,7 +554,7 @@ h2.widget-title, h2.widget-title span {
 
 /**** home page boxes ***/
 .cwk-homebox-wrapper {
-  margin: 5px;
+  margin: 5px 5px 24px 5px;
   border: 1px solid grey;
   padding: 10px;
   height: 162px; }
@@ -566,7 +566,8 @@ h2.widget-title, h2.widget-title span {
   .cwk-homebox-wrapper .cwk-homebox-title {
     text-align: center;
     letter-spacing: 1px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-bottom: 4px; }
   .cwk-homebox-wrapper .menu-home_farmers-container, .cwk-homebox-wrapper .menu-home_shop-container, .cwk-homebox-wrapper .menu-home_table-container {
     padding-left: 10px; }
   .cwk-homebox-wrapper ul.cwk-menu-list, .cwk-homebox-wrapper ul.ecs-event-list {

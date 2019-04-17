@@ -91,7 +91,7 @@
 }
 /**** home page boxes ***/
 .cwk-homebox-wrapper {
-	margin: 5px;
+	margin: 5px 5px 24px 5px;
 	border: 1px solid grey;
 	padding: 10px;
 	height: 162px;
@@ -107,6 +107,7 @@
 		//text-decoration: underline;
 		text-transform: uppercase;
 		//border-bottom: 1px solid red;
+		margin-bottom: 4px;
 	}
 	.menu-home_farmers-container, .menu-home_shop-container, .menu-home_table-container {
 		padding-left: 10px;
