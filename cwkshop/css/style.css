@@ -585,6 +585,8 @@ h2.widget-title, h2.widget-title span {
       font-size: 15px;
       font-weight: 600;
       list-style-position: inside; }
+  .cwk-homebox-wrapper ul.ecs-event-list li {
+    padding-bottom: 0px; }
 
 .home.widget-title a {
   color: #333 !important;

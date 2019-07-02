@@ -131,6 +131,9 @@
 			 list-style-position: inside;
 		}
 	}
+	ul.ecs-event-list li {
+		padding-bottom: 0px; // only on homepage
+	}
 }
 // home page recent posts at bottom.
 .home.widget-title a {
