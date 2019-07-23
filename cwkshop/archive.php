@@ -16,7 +16,7 @@ get_header(); ?>
 
 
 		<?php $sidebarposition = of_get_option('dessky_sidebar_position' ,'right'); ?>
-        
+
         <!-- MAIN CONTENT Archive--> <!-- <?php  if (is_category('cheryl-dishes')) {echo 'cat cheryl-dishes';} else {echo 'not cheryl';} ?> -->
         <div id="outermain">
         	<div class="container">
@@ -29,23 +29,24 @@ get_header(); ?>
                                  * we can run the loop properly, in full.
                                  */
                                 rewind_posts();
-                                
+
                                 /* Run the loop for the archives page to output the posts.
                                  * If you want to overload this in a child theme then include a file
                                  * called loop-archives.php and that will be used instead.
                                  */
                                 get_template_part( 'loop', 'archive' );
                             ?>
-                    	<div class="clear"></div><!-- clear float --> 
+                    	<div class="clear"></div><!-- clear float -->
                         </div><!-- main -->
                     </section><!-- content -->
-                    <aside id="sidebar" class="three columns <?php if($sidebarposition=="left"){echo "positionleft alpha";}else{echo "positionright omega";}?>">
-                        <?php get_sidebar();?>  
+                    <aside id="sidebar" class="three columns zarchive <?php if($sidebarposition=="left"){echo "positionleft alpha";}else{echo "positionright omega";}?>">
+											<!-- post sidebar -->
+                        <?php get_sidebar('post-sidebar');?>
                     </aside><!-- sidebar -->
-                    
+
                 </section><!-- maincontent -->
             </div>
         </div>
         <!-- END MAIN CONTENT -->
-    
+
 <?php get_footer(); ?>
