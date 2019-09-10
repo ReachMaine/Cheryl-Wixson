@@ -553,11 +553,14 @@ h2.widget-title, h2.widget-title span {
     text-align: right; }
 
 /**** home page boxes ***/
+.zrow-flex {
+  display: flex;
+  align-items: stretch; }
+
 .cwk-homebox-wrapper {
-  margin: 5px 5px 24px 5px;
   border: 1px solid grey;
-  padding: 10px;
-  height: 162px; }
+  padding: 10px 10px 0px 10px;
+  height: 100%; }
   .cwk-homebox-wrapper .cwk-homebox-icon {
     float: left;
     margin-top: -20px;
@@ -574,7 +577,8 @@ h2.widget-title, h2.widget-title span {
     padding-left: 10px;
     list-style-position: inside;
     text-align: left;
-    list-style: circle; }
+    list-style: circle;
+    margin-bottom: 0px; }
     .cwk-homebox-wrapper ul.cwk-menu-list li, .cwk-homebox-wrapper ul.ecs-event-list li {
       list-style-position: inside;
       list-style: circle;
