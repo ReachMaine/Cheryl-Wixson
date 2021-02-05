@@ -15,13 +15,13 @@
   	 unset( $tabs['reviews'] );
 
 		// Adds the recipe tab
-    if (get_post_meta( get_the_ID(), "related-recipes", true)) {
+    /* zig xout with new plugin....if (get_post_meta( get_the_ID(), "related-recipes", true)) {
   	 	$tabs['recipe_tab'] = array(
   			'title' 	=> __( 'Recipes', 'woocommerce' ),
   			'priority' 	=> 51,
   			'callback' 	=> 'woo_recipes_tab_content'
   		);
-    }
+    } */
 		// adds the nutrition tab - turned off for now.
 		/* $tabs['nutrition_tab'] = array(
 			'title' 	=> __( 'Nutrition', 'woocommerce' ),
