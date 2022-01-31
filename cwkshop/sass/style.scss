@@ -17,6 +17,7 @@
 @import "partials/pieces";
 @import "partials/media1200";
 @import "partials/recipes";
+@import "partials/events";
 
 /* Theme customization starts here */
 #headerright {
@@ -395,27 +396,7 @@ ul.ecs-event-list  { // ex.: dinner is served page
 	//background-color: $wooc-error-msg!important;
 }
 /*** end shop **************/
-/****events calendar */
-.tribe-events-calendar {
-/* use tribe-events/tribe-events.css  */
-}
-.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a,
-.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore a {
-	opacity: 1!important;
-}
 
-#tribe-events-content h2 {
-	font-weight: bold;
-}
-
-table.tribe-events-calendar thead tr th{
-		background-color: #f44438;
-		background-image: none;
-		background: #f44438;
-		background: -webkit-gradient(linear, left top, left bottom, from(#f44438), to(#b21b10));
-		background: -moz-linear-gradient(top, #f44438, #b21b10);
-	}
-/*** end events calendar ************
 /**** sidebar ***********************/
 #sidebar {
 	padding-top: 20px!important;

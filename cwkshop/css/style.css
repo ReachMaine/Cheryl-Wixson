@@ -493,6 +493,18 @@ h2.widget-title, h2.widget-title span {
   clear: both; }
 
 /**************** end recipe css  *************/
+/*******  tribe events "V2" styling  (skeletal) */
+.single.single-tribe_events .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group {
+  width: 30%; }
+  .single.single-tribe_events .tribe-events-single-section.tribe-events-event-meta .tribe-events-meta-group dt {
+    font-weight: bold; }
+
+.tribe-events-nav-pagination .tribe-events-sub-nav {
+  list-style: none; }
+  .tribe-events-nav-pagination .tribe-events-sub-nav li a span {
+    display: inline; }
+
+/*** end events calendar V2 ************/
 /* Theme customization starts here */
 #headerright {
   width: auto; }
@@ -764,25 +776,6 @@ ul.ecs-event-list li {
   background-color: #138124 !important; }
 
 /*** end shop **************/
-/****events calendar */
-.tribe-events-calendar {
-  /* use tribe-events/tribe-events.css  */ }
-
-.tribe-events-calendar td.tribe-events-past .tribe-events-month-event-title a,
-.tribe-events-calendar td.tribe-events-past .tribe-events-viewmore a {
-  opacity: 1 !important; }
-
-#tribe-events-content h2 {
-  font-weight: bold; }
-
-table.tribe-events-calendar thead tr th {
-  background-color: #f44438;
-  background-image: none;
-  background: #f44438;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f44438), to(#b21b10));
-  background: -moz-linear-gradient(top, #f44438, #b21b10); }
-
-/*** end events calendar ************
 /**** sidebar ***********************/
 #sidebar {
   padding-top: 20px !important; }
